@@ -1,4 +1,4 @@
 const GetComponent = () => {
     return <h1>Alex</h1>
 };
-/* Component = Function returning js + html. */
+/* React component is a function returning UI stuff. Need to start with a capital letter. */
