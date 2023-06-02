@@ -1,6 +1,8 @@
 import './App.css';
 import {useState} from "react";
 
+/* React render only one time. States are usefull to render the page each time "age" is update. */
+
 function App() {
 
   const [count, setCount] = useState(0);
