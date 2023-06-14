@@ -11,8 +11,9 @@ interface Props{
 }
 
 export const Task = (props : Props): JSX.Element => {
+    {/* Display each task of the todoList with the button X and Complete. */}
     return (
-        <div>
+        <div> 
             {props.todoList.map((task)=> {
                 return (
                     <div>
