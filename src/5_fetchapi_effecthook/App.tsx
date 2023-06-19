@@ -1,9 +1,8 @@
 import './App.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Axios from "axios";
 
 function App() {
-  // Mini-Project : Doing a todolist.
 
   interface dataType{
     age: number;
@@ -27,6 +26,13 @@ function App() {
     setName(event.target.value);
   };
 
+  useEffect(() => {
+    console.log("MOUNT happened!");
+    handleDataFetch();
+    return console.log("UNMOUT happened");
+    // Remark: Every time one values in [] change, it will MOUNT then UNMOUNT the data.
+  }, [])
+
   return (
     <div className="App">
       <input onChange={handleNameInput} placeholder="Put a name..."/>
@@ -34,7 +40,6 @@ function App() {
       <h1>Age : {fetchData?.age}</h1>
       <h1>Count :{fetchData?.count}</h1>
       <h1>Name: {fetchData?.name}</h1>
-
     </div>
   );
 }
