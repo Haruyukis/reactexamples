@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from "axios";
 
 function App() {
@@ -22,17 +22,6 @@ function App() {
       setFetchData(res.data);
     });
   };
-
-  /* UseEffect Hook */
-
-  useEffect(() => {
-    console.log("MOUNT happened!");
-    handleDataFetch();
-    return console.log("UNMOUNT happened!");
-  // Remark : Every changes on all variables inside [] will always mount and unmount.
-  }, [name])
-
-  
 
   const handleNameInput = (event : React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
