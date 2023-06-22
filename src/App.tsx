@@ -4,7 +4,7 @@ import { useCount } from "./Counter";
 function App(): JSX.Element {
 
   const [counter, increase, decrease, reset] = useCount(0); // ⚠️ Basic call of a Hook
-  // Remark: These name must be the same if the hook return an object. Can be change if it's an array.
+  // Remark: The name of these states must be the same if the hook return an object. Can be change if it's an array.
 
   return (
     <div className="App">
