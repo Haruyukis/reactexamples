@@ -8,9 +8,9 @@ function App(): JSX.Element {
 
   return (
     <div className="App">
-      <Router>
+      <Router> {/* Everything between the balise Router is dealing with react-router-dom. */}
         <Navbar />
-          <Routes>
+          <Routes> {/* Inside of the balise Routes, the elements can only be Route. */}
             {/* <Route> always contains the path of one specific page and the component corresponding to that page. */}
             <Route path="/" element={<Home />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
