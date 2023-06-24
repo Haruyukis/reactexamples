@@ -17,7 +17,7 @@ export const Navbar = () => {
     return (
         <div>
             <Link to="/">Home </Link>
-            <Link to="/login">Login </Link>
+            { user ? <Link to="/create-post">Create Post </Link> : <Link to="/login">Login </Link>}
             {/* ⚠️ Displaying the current user information. */}
             {user &&
                 <div>
