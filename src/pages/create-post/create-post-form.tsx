@@ -27,12 +27,12 @@ export const CreatePostForm = () : JSX.Element => {
 
     // Initialize posts collection and user from firebase.
 
-    const posts = collection(db, "posts");
+    const postsRef = collection(db, "posts");
     const [user] = useAuthState(auth);
 
     // Submit Handler
     const OnCreatePost = async (data : PostDataType) => {
-        await addDoc(posts, {
+        await addDoc(postsRef, {
             ...data,
             userId: user?.uid,
             username: user?.displayName
