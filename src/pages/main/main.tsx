@@ -33,7 +33,7 @@ export const Main = () : JSX.Element => {
 
     return (
         <div>
-            {postsList?.map((post) => <Post post={post}/>)}
+            {user && postsList?.map((post) => <Post post={post}/>)}
         </div>
     );
 }
