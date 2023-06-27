@@ -29,7 +29,7 @@ export const Main = () : JSX.Element => {
 
     useEffect(() => {
         user && getPost();
-    })
+    }, [])
 
     return (
         <div>
