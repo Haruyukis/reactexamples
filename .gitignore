@@ -36,7 +36,7 @@ package*# See https://help.github.com/articles/ignoring-files/ for more about ig
 
 # misc
 .DS_Store
-.env.local
+.env.locals
 .env.development.local
 .env.test.local
 .env.production.local
@@ -47,3 +47,5 @@ yarn-error.log*
 
 # firebase
 /src/config/firebase.ts
+./firebase
+./github
