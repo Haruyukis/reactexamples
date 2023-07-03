@@ -28,7 +28,7 @@ export const Main = () : JSX.Element => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        getPost();
+        user && getPost();
     }, [])
 
     return (
