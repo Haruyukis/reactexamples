@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .sidebar-icon {
+    /*⚠️ @apply allow to create a custom class.
+    - 'relative' means relative position according the parent element.
+    - 'flex' allows the element positionning == main and cross axis.
+    - 'item-center' means align according the cross axis (if direction col).
+    - 'justify-center' means align according the main axis (if direction col).
+    - 'cursor-pointer' changes the cursor in pointer cursor.
+    - 'rounded-<?>xl' means rounding the botder.
+    - 'transition-all' means transition to the static state into the final one.
+    - 'duration-300' means do the transition in 300ms.
+    - 'ease-linear' means do the transition uniformly.
+    
+    */
+    @apply relative mx-auto mb-2 mt-2 flex h-12 w-12 cursor-pointer items-center justify-center rounded-3xl
+        bg-gray-200  text-green-500 transition-all duration-300 ease-linear hover:rounded-xl hover:bg-green-600 hover:text-black 
+        dark:bg-gray-800 dark:hover:bg-green-600 dark:hover:text-white;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .sidebar-text {
+    /*⚠️ @apply allow to create a custom class.
+    - 'absolute' have its own content position. Remove from the parent.
+    - 'min-w-max' content on width only.
+    - 'scale-0' means all size equal to 0 (in percentage).
+    - 'origin-left' means transitionning from the left to the right.
+    */
+    @apply absolute left-14 m-2 w-auto min-w-max origin-left scale-0 rounded-md
+        bg-gray-100 p-2
+        text-xs font-bold
+        text-black shadow-md
+        transition-all duration-100 dark:bg-gray-900 dark:text-white;
   }
-  to {
-    transform: rotate(360deg);
+  .dark-mode {
+    @apply mx-auto my-auto;
   }
 }
