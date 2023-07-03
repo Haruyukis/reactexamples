@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+### ReactExamples - React with Typescript 🤩
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective is to do an easy-to-access codes of the most important React Typescript concepts. React uses `JSX.Element` to create page thanks to components as function instead of decllarative HTML. It uses `React Hooks` to manage the lifecycle of those components.
 
-## Available Scripts
+## Table of contents 📃
 
-In the project directory, you can run:
+To understand this repository, each example correspond to a basic and important code of React TypeScript:
 
-### `npm start`
+- Components and the use of props.
+- Ternary Operator : Having a cleaner code and write less code.
+- Lists : Multiple method and example of a JS list.
+- useState : React State Hook
+- todoListApp : Creating a todoList App thanks to the previous examples.
+- fetchApi_effectHook : Learning how to fetch Data using `Axios` and how to use `React Effect Hook`.
+- routes : Learning how to create multiple routes and different pages using `React Router Dom`.
+- contextHook : One way to pass down variables using `React Context Hook`.
+- fetchQueryClient : Proper way to fetch Data.
+- formHook_Resolver : Creating a form and verify each input with `yup` library.
+- customHook : Creating a customHook (a function dealing with lifecycle of one component).
+- reduxTool : Setting up a store to pass down variables.
+- socialmediawebapp : Using firebase to create a social media app using all of the previous examples.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## References 📚
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [PedroTech courses](https://www.youtube.com/watch?v=U2Wltnv-doo&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR)
