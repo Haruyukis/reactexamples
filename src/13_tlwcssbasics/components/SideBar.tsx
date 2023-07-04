@@ -10,7 +10,7 @@ export const SideBar = () => {
   // ⚠️Creating the item of the sidebar.
 
   return (
-    <div className="fixed left-0 top-0 m-0 flex h-screen w-16 flex-col bg-gray-900 text-white shadow-lg">
+    <div className="fixed left-0 top-0 m-0 flex h-screen w-16 flex-col bg-gray-100 text-black shadow-lg dark:bg-gray-900 dark:text-white">
       <SideBarIcon icon={<BsEmojiSunglasses size="20" />} text="Emoji" />
       <SideBarIcon icon={<LuActivity size="20" />} text="Health" />
       <SideBarIcon icon={<LuAlarmCheck size="20" />} text="Alarm" />
