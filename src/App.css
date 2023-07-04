@@ -34,7 +34,4 @@
         text-black shadow-md
         transition-all duration-100 dark:bg-gray-900 dark:text-white;
   }
-  .dark-mode {
-    @apply mx-auto my-auto;
-  }
 }
