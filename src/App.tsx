@@ -1,27 +1,25 @@
 import "./App.css";
-import { DarkMode } from "./components/DarkMode";
-import { SideBar } from "./components/SideBar";
-import { useEffect, useState } from "react";
+import { Navbar } from "./components/Navbar";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
 
 function App(): JSX.Element {
-  // Initialize DarkMode with LocalStorage. -> LocalStorage.getItem is used only during the init.
-  const localStorageDarkMode = localStorage.getItem("DarkMode");
-  const initialDarkMode =
-    localStorageDarkMode === null ? "dark" : localStorageDarkMode;
-  const [isDark, setIsDark] = useState(initialDarkMode);
-
-  // SetItem in localStorage each time 'isDark' is modified.
-  useEffect(() => {
-    localStorage.setItem("DarkMode", isDark);
-  }, [isDark]);
-
   return (
-    <div className={isDark}>
-      <div className={`v-screen flex h-screen bg-gray-200 dark:bg-gray-700`}>
-        <SideBar />
-        <DarkMode set={setIsDark} isDark={isDark} />
-      </div>
-    </div>
+    <Router>
+      {/* Everything between the balise Router is dealing with react-router-dom. */}
+      <Navbar />
+      <Routes>
+        {" "}
+        {/* Inside of the balise Routes, the elements can only be Route. */}
+        {/* <Route> always contains the path of one specific page and the component corresponding to that page. */}
+        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="*"
+          element={<h1> Error 404 : Page not found...</h1>}
+        ></Route>
+      </Routes>
+    </Router>
   );
 }
 

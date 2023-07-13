@@ -24,4 +24,4 @@ yarn-error.log*
 
 .github
 
-./src/img
+/src/img

@@ -10,7 +10,9 @@ import ReactDOM from "react-dom/client";
 //import App from './10_customHook/App';
 //import App from './11_reduxTool/App';
 //import App from './12_socialmediawebapp/App';
-//import App from './13_sidebar/App';
+//import App from './13_tlwcssbasics/App';
+//import App from './14_tlwcss_from_scratch/App';
+
 import App from "./App";
 
 const root = ReactDOM.createRoot(

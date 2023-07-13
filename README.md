@@ -19,7 +19,15 @@ To understand this repository, each example correspond to a basic and important 
 - customHook : Creating a customHook (a function dealing with lifecycle of one component).
 - reduxTool : Setting up a store to pass down variables.
 - socialmediawebapp : Using firebase to create a social media app using all of the previous examples.
+- tlwcssbasics : Using tailwindCSS to create a Discord-inspired app.
 
 ## References 📚
 
+# React Course :
+
 - [PedroTech courses](https://www.youtube.com/watch?v=U2Wltnv-doo&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR)
+
+# TailwindCSS Course :
+
+- [Fireship course](https://www.youtube.com/watch?v=pfaSUYaSgRo)
+- [Traversy Media course](https://www.youtube.com/watch?v=dFgzHOX84xQ)
