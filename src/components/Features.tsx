@@ -1,6 +1,6 @@
 export const Features = () => {
   return (
-    <div className="container mx-auto mt-10 flex flex-col justify-center space-y-12 px-4 md:flex-row md:space-y-0">
+    <div className="container mx-auto flex flex-col justify-center space-y-12 px-4 md:mt-10 md:flex-row md:space-y-0">
       {/* What's different. */}
       <div className="flex flex-col space-y-12 md:w-1/2">
         <h2 className="max-w-md text-center text-4xl font-bold md:text-left">
