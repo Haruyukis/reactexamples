@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Cta = () => {
   return (
-    <div className="bg-brightRed py-6">
+    <div className="bg-brightRed bg-BgCtaImage bg-no-repeat py-6">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-12 md:flex-row md:justify-between md:space-y-0">
         {/* Title */}
         <div>

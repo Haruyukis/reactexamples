@@ -22,6 +22,10 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
+      backgroundImage:{
+        BgBodyImage:"url(./img/bg-tablet-pattern.svg)",
+        BgCtaImage:"url(./img/bg-simplify-section-desktop.svg)"
+      },
     },
   },
   plugins: [],

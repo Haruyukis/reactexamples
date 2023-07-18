@@ -5,7 +5,7 @@ export const Hero = (): JSX.Element => {
   return (
     <div className="container mx-auto mt-10 flex flex-col-reverse items-center justify-center px-6 md:flex-row">
       {/* Left Item */}
-      <div className="mx-auto mb-32 flex w-1/2 flex-col space-y-12">
+      <div className="mb-32 flex w-1/2 flex-col space-y-12 md:pl-32">
         <h1 className="max-w-md text-center text-4xl font-bold md:text-left md:text-5xl">
           Bring everyone together to build better products
         </h1>

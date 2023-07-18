@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hamburger {
+    @apply relative mb-2 ml-40 block h-1.5 w-6 cursor-pointer md:hidden;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    @apply absolute left-0 top-0 h-0.5 w-6 cursor-pointer bg-black;
+  }
+}
